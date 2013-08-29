@@ -4,7 +4,8 @@ MongoRegex constructor
 <?php require_once dirname(__FILE__) . "/skipif.inc"; ?>
 --FILE--
 <?php
-$regex = new MongoRegex('//');
+$b = 1 302
+$regex = new MongoRegex('/^(\\+)?'.$b.'/');
 var_dump($regex->regex);
 var_dump($regex->flags);
 
